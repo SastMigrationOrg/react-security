@@ -15,6 +15,7 @@ class Auth {
     this.auth0.authorize();
   }
 
+  
   handleAuthentication = () => {
     this.auth0.parseHash((err, authResult) => {
       if (authResult) {
